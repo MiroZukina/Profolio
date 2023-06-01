@@ -11,24 +11,27 @@
 </head>
 <body>
  <header class="header">
-    <a href="#" class="logo">Miro.</a>
+    <a href="#" class="logo">Miro.<span class="animate" style="--i:1;"></span></a>
 
-    <div class="bx bx-menu" id="menu-icon"></div>
+    <div class="bx bx-menu" id="menu-icon"><span class="animate" style="--i:2;"></span></div>
     
     
      <nav class="navbar">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
         <span class="active-nav"></span>
+        <span class="animate" style="--i:2;"></span>
     </nav>
  </header>
     
-<section class="home" id="home">
+<section class="home show-animate" id="home">
     <div class="home-conect">
-        <h1>Hi, I'm <span>Miro Zukina</span></h1>
+        <h1>Hi, I'm <span>Miro Zukina</span><span class="animate" style="--i:2;"></span></h1>
         <div class="text-animate">
             <h3>Frontend Devaloper</h3>
+            <span class="animate" style="--i:3;"></span>
         </div>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolores, mollitia rem natus delectus beatae. Consequuntur ratione enim iure animi nostrum rerum? Ex amet accusantium consequuntur mollitia.</p>
 
@@ -63,6 +66,20 @@
     <a href="#" class="btn">Read More</a>
 </div>
 </section>
+<!-- skills section -->
+<section class="skills" id="skills">
+    <h2 class="heading">Skills, what i can  <span>do!</span></h2>
+   <div class="change-color">
+    <button>Change Colour</button>
+    <p>Change background Colour</p>
+   </div>
+
+
+
+</section>
+
+
+
 
 <!-- Contact section -->
  
@@ -111,6 +128,7 @@
         <a href="#"><i class='bx bx-up-arrow-alt'></i></a>
     </div>
 </footer>
+<script src="JSGraphics.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
