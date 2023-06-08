@@ -121,9 +121,12 @@ section{
    
 }
 
+.skills-elements{
+    flex-direction: column;
+    justify-content: center;
+}
 
 .skills p{
-        width: auto;
         height: 100px;
         background-color: var(--main-color);
         margin: 20px;
