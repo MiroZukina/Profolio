@@ -8,6 +8,85 @@
     <title>Miro Zukina | Full Stack Web Developer</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* PROJECTS SECTION */
+        .projects {
+            background: var(--second-bg-color);
+            padding: 6rem 9%;
+        }
+
+        .projects-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .project-card {
+            background: var(--bg-color);
+            border: .2rem solid var(--main-color);
+            border-radius: 1rem;
+            padding: 2.5rem;
+            width: 34rem;
+            transition: .3s;
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+        }
+
+        .project-card:hover {
+            box-shadow: 0 0 2rem var(--main-color);
+            transform: translateY(-4px);
+        }
+
+        .project-card h3 {
+            font-size: 2.2rem;
+            color: var(--main-color);
+        }
+
+        .project-card p {
+            font-size: 1.5rem;
+            line-height: 1.6;
+            color: var(--text-color);
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: .8rem;
+        }
+
+        .project-tags span {
+            background: var(--second-bg-color);
+            border: .1rem solid var(--main-color);
+            color: var(--main-color);
+            font-size: 1.2rem;
+            padding: .3rem 1rem;
+            border-radius: 2rem;
+        }
+
+        .project-links {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: .5rem;
+        }
+
+        .project-links a {
+            font-size: 1.4rem;
+            color: var(--main-color);
+            border: .15rem solid var(--main-color);
+            padding: .5rem 1.5rem;
+            border-radius: .5rem;
+            transition: .3s;
+        }
+
+        .project-links a:hover {
+            background: var(--main-color);
+            color: var(--bg-color);
+            box-shadow: 0 0 1rem var(--main-color);
+        }
+    </style>
 </head>
 <body>
     <header class="header">
@@ -17,6 +96,7 @@
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -60,6 +140,43 @@
                 <button class="btn-theme" id="theme-button" type="button">Change Theme Color</button>
                 <p id="theme-text" style="margin-top: 1rem; cursor: pointer; font-size: 1.4rem;">Click to change the glow!</p>
             </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section class="projects" id="projects">
+        <h2 class="heading">My <span>Projects</span></h2>
+        <div class="projects-grid">
+
+            <div class="project-card">
+                <h3>🍽️ Foodies</h3>
+                <p>A food & recipe social platform where users share meals, restaurant visits, and recipes. Built with Django and deployed on Railway with PostgreSQL.</p>
+                <div class="project-tags">
+                    <span>Django</span>
+                    <span>PostgreSQL</span>
+                    <span>Railway</span>
+                    <span>Python</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://web-production-49b0e.up.railway.app" target="_blank"><i class='bx bx-link-external'></i> Live</a>
+                    <a href="https://github.com/MiroZukina/Foodies" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                </div>
+            </div>
+            <div class="project-card">
+                <h3>🧠 Janko Skudar</h3>
+                <p>Professional psychotherapy website for a Dublin-based therapist. Bilingual site in English and Croatian with contact form, therapy options and FAQ section.</p>
+                <div class="project-tags">
+                    <span>Flask</span>
+                    <span>Python</span>
+                    <span>Bootstrap</span>
+                    <span>HTML/CSS</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://www.janko-skudar-psychotherapist.com" target="_blank"><i class='bx bx-link-external'></i> Live</a>
+                    <a href="https://github.com/MiroZukina/janko-skudar" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                </div>
+            </div>
+
         </div>
     </section>
 
