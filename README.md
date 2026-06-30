@@ -1,4 +1,4 @@
-# Miro Zukina | Full Stack Web Developer Portfolio
+# Miro Zukina | Full Stack Stack Software Developer Portfolio
 
 A responsive, single-page portfolio website showcasing modern UI design elements, neon typography glows, interactive theme configuration capabilities, and integrated form processing logic. 
 
