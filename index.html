@@ -146,60 +146,84 @@
     <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>MTBTrails</h3>
-                <p>🚵Django community platform where riders
-                    share trails by pinning locations, drawing routes on an interactive map,
-                    or uploading GPX files from Strava/Garmin. Features elevation profiles,
-                    difficulty grading, weather at the trailhead, an explore map of all
-                    trails, rider profiles with distance/climb stats, and a gear marketplace
-                    with buyer-seller messaging. ~55-test suite, deployed on Railway with
-                    PostgreSQL and Cloudinary media storage</p>
-                <div class="project-tags">
-                    <span>Django</span>
-                    <span>PostgreSQL</span>
-                    <span>JavaScript</span>
-                    <span>Leaflet</span>
-                    <span>Cloudinary</span>
-                    <span>Railway</span>
-                    <span>Python</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://mtb-trails-production.up.railway.app" target="_blank"><i class='bx bx-link-external'></i> Live</a>
-                    <a href="https://github.com/MiroZukina/MTB-Trails" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
-                </div>
-            </div>
+        <div class="apps-grid">
 
-            <div class="project-card">
-                <h3>🍽️ Foodies</h3>
-                <p>A food & recipe social platform where users share meals, restaurant visits, and recipes. Built with Django and deployed on Railway with PostgreSQL.</p>
-                <div class="project-tags">
-                    <span>Django</span>
-                    <span>PostgreSQL</span>
-                    <span>Railway</span>
-                    <span>Python</span>
+            <!-- MTBTrails -->
+            <div class="app-card">
+                <div class="app-head">
+                    <img src="images/mtbtrails-badge.png" alt="MTBTrails" class="app-icon">
+                    <div class="app-title">
+                        <h3>MTBTrails</h3>
+                        <span>Community · Django · Live</span>
+                    </div>
+                    <a href="https://mtb-trails-production.up.railway.app" target="_blank" class="app-open">Open</a>
                 </div>
-                <div class="project-links">
-                    <a href="https://web-production-49b0e.up.railway.app" target="_blank"><i class='bx bx-link-external'></i> Live</a>
-                    <a href="https://github.com/MiroZukina/Foodies" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
-                </div>
-            </div>
-            <div class="project-card">
-                <h3>🧠 Janko Skudar</h3>
-                <p>Professional psychotherapy website for a Limerick-based therapist. Bilingual site in English and Croatian with contact form, therapy options and FAQ section.</p>
-                <div class="project-tags">
-                    <span>Flask</span>
-                    <span>Python</span>
-                    <span>Bootstrap</span>
-                    <span>HTML/CSS</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://www.janko-skudar-psychotherapist.com" target="_blank"><i class='bx bx-link-external'></i> Live</a>
-                    <a href="https://github.com/MiroZukina/janko-skudar" target="_blank"><i class='bx bxl-github'></i> GitHub</a>
+                <a href="https://mtb-trails-production.up.railway.app" target="_blank">
+                    <img src="images/mtbtrails-shot.png" alt="MTBTrails screenshot" class="app-shot">
+                </a>
+                <div class="app-body">
+                    <p>Trail-sharing platform for Irish MTB riders — draw routes or upload
+                       GPX, elevation profiles, difficulty grades, trail weather, rider
+                       stats, and a gear marketplace.</p>
+                    <div class="app-info">
+                        <div><strong>55+</strong><span>TESTS</span></div>
+                        <div><strong>Django</strong><span>STACK</span></div>
+                        <div><strong>Railway</strong><span>DEPLOY</span></div>
+                        <div><a href="https://github.com/MiroZukina/MTB-Trails" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
+                    </div>
                 </div>
             </div>
-
+        
+            <!-- Foodies -->
+            <div class="app-card">
+                <div class="app-head">
+                    <div class="app-icon app-icon-emoji">🍽️</div>
+                    <div class="app-title">
+                        <h3>Foodies</h3>
+                        <span>Social · Django · Live</span>
+                    </div>
+                    <a href="YOUR_FOODIES_LIVE_URL" target="_blank" class="app-open">Open</a>
+                </div>
+                <a href="YOUR_FOODIES_LIVE_URL" target="_blank">
+                    <img src="images/foodies-shot.png" alt="Foodies screenshot" class="app-shot">
+                </a>
+                <div class="app-body">
+                    <p>Food &amp; recipe social platform — share meals, restaurant visits,
+                       and recipes with the community.</p>
+                    <div class="app-info">
+                        <div><strong>Django</strong><span>STACK</span></div>
+                        <div><strong>Postgres</strong><span>DB</span></div>
+                        <div><strong>Railway</strong><span>DEPLOY</span></div>
+                        <div><a href="YOUR_FOODIES_GITHUB" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Janko Skudar -->
+            <div class="app-card">
+                <div class="app-head">
+                    <div class="app-icon app-icon-emoji">🧠</div>
+                    <div class="app-title">
+                        <h3>Janko Skudar</h3>
+                        <span>Client site · Flask · Live</span>
+                    </div>
+                    <a href="YOUR_JANKO_LIVE_URL" target="_blank" class="app-open">Open</a>
+                </div>
+                <a href="YOUR_JANKO_LIVE_URL" target="_blank">
+                    <img src="images/janko-shot.png" alt="Janko Skudar screenshot" class="app-shot">
+                </a>
+                <div class="app-body">
+                    <p>Professional psychotherapy website for a Limerick-based therapist.
+                       Bilingual (EN/HR) with contact form, therapy options and FAQ.</p>
+                    <div class="app-info">
+                        <div><strong>Flask</strong><span>STACK</span></div>
+                        <div><strong>EN·HR</strong><span>LANGS</span></div>
+                        <div><strong>Railway</strong><span>DEPLOY</span></div>
+                        <div><a href="YOUR_JANKO_GITHUB" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
+                    </div>
+                </div>
+            </div>
+        
         </div>
     </section>
 

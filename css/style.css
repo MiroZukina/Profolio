@@ -455,3 +455,31 @@ span {
 @media (max-width: 520px) {
     html { font-size: 50%; }
 }
+
+
+/* App-store style project cards */
+.apps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px; max-width: 1200px; margin: 0 auto; }
+  .app-card { background: #0d1926; border: 1px solid #1e3a52; border-radius: 20px;
+    overflow: hidden; transition: transform .2s ease, border-color .2s ease; }
+  .app-card:hover { transform: translateY(-4px); border-color: #2f9bf4; }
+  .app-head { display: flex; align-items: center; gap: 14px; padding: 16px 18px; }
+  .app-icon { width: 58px; height: 58px; border-radius: 14px; object-fit: cover; }
+  .app-icon-emoji { background: #14243a; border: 1px solid #1e3a52; display: flex;
+    align-items: center; justify-content: center; font-size: 26px; }
+  .app-title { flex: 1; min-width: 0; }
+  .app-title h3 { margin: 0; font-size: 17px; }
+  .app-title span { font-size: 12px; opacity: .65; }
+  .app-open { background: #2f9bf4; color: #06121f !important; font-size: 13px;
+    font-weight: 600; padding: 6px 18px; border-radius: 999px; text-decoration: none; }
+  .app-open:hover { filter: brightness(1.15); }
+  .app-shot { width: 100%; height: 160px; object-fit: cover; object-position: top;
+    display: block; background: #14243a; }
+  .app-body { padding: 14px 18px 18px; }
+  .app-body p { font-size: 13.5px; line-height: 1.55; margin: 0 0 12px; }
+  .app-info { display: flex; border-top: 1px solid #1e3a52; padding-top: 10px; }
+  .app-info > div { flex: 1; text-align: center; }
+  .app-info > div + div { border-left: 1px solid #1e3a52; }
+  .app-info strong { display: block; font-size: 14px; color: #2f9bf4; }
+  .app-info span { font-size: 10px; letter-spacing: .05em; opacity: .6; }
+  .app-info a { text-decoration: none; }
