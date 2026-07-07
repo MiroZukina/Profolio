@@ -89,7 +89,6 @@
     </style>
 </head>
 <body>
-    <!-- ─── HEADER ─── -->
     <header class="header">
         <a href="#" class="logo">Miro<span>.</span></a>
         <div class="bx bx-menu" id="menu-icon"></div>
@@ -101,38 +100,35 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-
-    <!-- ─── HOME ─── -->
+    
     <section class="home" id="home">
         <div class="home-content">
             <h1>Hi, I'm <span>Miro Zukina</span></h1>
-            <h3>Full Stack Software Developer</h3>
-            <p>Dublin-based developer specializing in Python, Django, and JavaScript, building and deploying full-stack web applications from front-end to back-end. I bring a strong background in customer-focused problem solving from 15 years in high-end hospitality.</p>
+            <h3>Full Stack Stack Software Developer</h3>
+            <p class="para">Dublin-based developer specializing in Python, Django, and JavaScript, building and deploying full-stack web applications from front-end to back-end. I bring a strong background in customer-focused problem solving from 15 years in high-end hospitality.</p>
             <div class="btn-box btns">
                 <a href="#contact" class="btn">Hire Me</a>
                 <a href="mailto:miro.zukina@icloud.com" class="btn">Email Me</a>
             </div>
         </div>
         <div class="home-sci">
-            <a href="https://github.com/MiroZukina" target="_blank" aria-label="GitHub"><i class='bx bxl-github'></i></a>
-            <a href="https://www.linkedin.com/in/miro-zukina-042806172/" target="_blank" aria-label="LinkedIn"><i class='bx bxl-linkedin'></i></a>
+            <a href="https://github.com/MiroZukina" target="_blank"><i class='bx bxl-github'></i></a>
+            <a href="https://www.linkedin.com/in/miro-zukina-042806172/" target="_blank"><i class='bx bxl-linkedin'></i></a>
         </div>
     </section>
 
-    <!-- ─── ABOUT ─── -->
     <section class="about" id="about">
         <div class="about-img">
-            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='250'%3E%3Crect width='250' height='250' fill='%23112e42'/%3E%3Ctext x='125' y='130' text-anchor='middle' font-size='80' fill='%2300abf0'%3E👤%3C/text%3E%3C/svg%3E" alt="Miro Zukina">
+            <img src="img/about-bg.jpg" alt="Miro Zukina">
         </div>
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Bridging Hospitality &amp; Technology</h3>
-            <p class="para">Originally from Croatia, I am a Dublin-based Full Stack Software Developer. In 2024, I completed my Professional Diploma in Full Stack Software Development at UCD Professional Academy.</p>
+            <h3>Bridging Hospitality & Technology</h3>
+            <p class="para">Originally from Croatia, I am a Dublin-based Full Stack Stack Software Developer. In 2024, I completed my Professional Diploma in Full Stack Software Development at UCD Professional Academy.</p>
             <p class="para">With over a decade of experience in high-end hospitality, I bring a logical approach to work and a natural curiosity for technology, converting business requirements into technical solutions using industry best practices.</p>
         </div>
     </section>
 
-    <!-- ─── SKILLS ─── -->
     <section class="skills" id="skills">
         <h2 class="heading">Technical <span>Toolkit</span></h2>
         <div class="skills-elements">
@@ -140,14 +136,14 @@
                 <p><strong>Front-End:</strong> HTML5, CSS3, JavaScript, React, Bootstrap</p>
                 <p><strong>Back-End:</strong> Python, PHP, Node.js, MySQL, Django</p>
             </div>
-            <div style="margin-top: 3rem; text-align: center;">
+            <div class="change-color" style="margin-top: 3rem; text-align: center;">
                 <button class="btn-theme" id="theme-button" type="button">Change Theme Color</button>
-                <p id="theme-text" style="margin-top: 1rem; font-size: 1.4rem; cursor: pointer;">Click to change the glow!</p>
+                <p id="theme-text" style="margin-top: 1rem; cursor: pointer; font-size: 1.4rem;">Click to change the glow!</p>
             </div>
         </div>
     </section>
 
-    <!-- ─── PROJECTS ─── -->
+    <!-- PROJECTS SECTION -->
     <section class="projects" id="projects">
         <h2 class="heading">My <span>Projects</span></h2>
         <div class="apps-grid">
@@ -155,7 +151,7 @@
             <!-- MTBTrails -->
             <div class="app-card">
                 <div class="app-head">
-                    <div class="app-icon app-icon-emoji">🚵</div>
+                    <img src="images/mtbtrails-shot.png" alt="MTBTrails" class="app-icon">
                     <div class="app-title">
                         <h3>MTBTrails</h3>
                         <span>Community · Django · Live</span>
@@ -163,24 +159,21 @@
                     <a href="https://mtb-trails-production.up.railway.app" target="_blank" class="app-open">Open</a>
                 </div>
                 <a href="https://mtb-trails-production.up.railway.app" target="_blank">
-                    <div class="app-shot" style="display:flex;align-items:center;justify-content:center;font-size:6rem;background:var(--card-bg);color:var(--main-color);">🚵</div>
+                    <img src="images/mtbtrails-shot.png" alt="MTBTrails screenshot" class="app-shot">
                 </a>
                 <div class="app-body">
-                    <p>Trail-sharing platform for Irish MTB riders — draw routes or upload GPX, elevation profiles, difficulty grades, trail weather, rider stats, and a gear marketplace.</p>
+                    <p>Trail-sharing platform for Irish MTB riders — draw routes or upload
+                       GPX, elevation profiles, difficulty grades, trail weather, rider
+                       stats, and a gear marketplace.</p>
                     <div class="app-info">
                         <div><strong>55+</strong><span>TESTS</span></div>
                         <div><strong>Django</strong><span>STACK</span></div>
                         <div><strong>Railway</strong><span>DEPLOY</span></div>
-                        <div>
-                            <a href="https://github.com/MiroZukina/MTB-Trails" target="_blank">
-                                <strong><i class='bx bxl-github'></i></strong>
-                                <span>SOURCE</span>
-                            </a>
-                        </div>
+                        <div><a href="https://github.com/MiroZukina/MTB-Trails" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
                     </div>
                 </div>
             </div>
-
+        
             <!-- Foodies -->
             <div class="app-card">
                 <div class="app-head">
@@ -189,27 +182,23 @@
                         <h3>Foodies</h3>
                         <span>Social · Django · Live</span>
                     </div>
-                    <a href="https://web-production-49b0e.up.railway.app/" target="_blank" class="app-open">Open</a>
+                    <a href="//web-production-49b0e.up.railway.app/" target="_blank" class="app-open">Open</a>
                 </div>
-                <a href="https://web-production-49b0e.up.railway.app/" target="_blank">
-                    <div class="app-shot" style="display:flex;align-items:center;justify-content:center;font-size:6rem;background:var(--card-bg);color:var(--main-color);">🍽️</div>
+                <a href="//web-production-49b0e.up.railway.app/" target="_blank">
+                    <img src="images/foodies-shot.png" alt="Foodies screenshot" class="app-shot">
                 </a>
                 <div class="app-body">
-                    <p>Food &amp; recipe social platform — share meals, restaurant visits, and recipes with the community.</p>
+                    <p>Food &amp; recipe social platform — share meals, restaurant visits,
+                       and recipes with the community.</p>
                     <div class="app-info">
                         <div><strong>Django</strong><span>STACK</span></div>
                         <div><strong>Postgres</strong><span>DB</span></div>
                         <div><strong>Railway</strong><span>DEPLOY</span></div>
-                        <div>
-                            <a href="https://github.com/MiroZukina/Foodies" target="_blank">
-                                <strong><i class='bx bxl-github'></i></strong>
-                                <span>SOURCE</span>
-                            </a>
-                        </div>
+                        <div><a href="https://github.com/MiroZukina/Foodies" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
                     </div>
                 </div>
             </div>
-
+        
             <!-- Janko Skudar -->
             <div class="app-card">
                 <div class="app-head">
@@ -221,66 +210,62 @@
                     <a href="https://janko-skudar-psychotherapist.com/" target="_blank" class="app-open">Open</a>
                 </div>
                 <a href="https://janko-skudar-psychotherapist.com/" target="_blank">
-                    <div class="app-shot" style="display:flex;align-items:center;justify-content:center;font-size:6rem;background:var(--card-bg);color:var(--main-color);">🧠</div>
+                    <img src="images/janko-shot.png" alt="Janko Skudar screenshot" class="app-shot">
                 </a>
                 <div class="app-body">
-                    <p>Professional psychotherapy website for a Limerick-based therapist. Bilingual (EN/HR) with contact form, therapy options and FAQ.</p>
+                    <p>Professional psychotherapy website for a Limerick-based therapist.
+                       Bilingual (EN/HR) with contact form, therapy options and FAQ.</p>
                     <div class="app-info">
                         <div><strong>Flask</strong><span>STACK</span></div>
                         <div><strong>EN·HR</strong><span>LANGS</span></div>
                         <div><strong>Railway</strong><span>DEPLOY</span></div>
-                        <div>
-                            <a href="https://github.com/MiroZukina/janko-skudars" target="_blank">
-                                <strong><i class='bx bxl-github'></i></strong>
-                                <span>SOURCE</span>
-                            </a>
-                        </div>
+                        <div><a href="https://github.com/MiroZukina/janko-skudars" target="_blank"><strong><i class='bx bxl-github'></i></strong><span>SOURCE</span></a></div>
                     </div>
                 </div>
             </div>
-
+        
         </div>
     </section>
 
-    <!-- ─── CONTACT ─── -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
         <form id="form">
             <div class="input-box">
                 <div class="input-field">
                     <input type="text" id="name" placeholder="First Name" required>
-                    <div class="error"></div>
+                    <div class="error" style="color: #ff4d4d; font-size: 1.2rem; text-align: left; margin-top: 0.3rem;"></div>
                 </div>
                 <div class="input-field">
                     <input type="text" id="secondName" placeholder="Second Name" required>
-                    <div class="error"></div>
+                    <div class="error" style="color: #ff4d4d; font-size: 1.2rem; text-align: left; margin-top: 0.3rem;"></div>
                 </div>
                 <div class="input-field">
                     <input type="email" id="email" placeholder="Email Address" required>
-                    <div class="error"></div>
+                    <div class="error" style="color: #ff4d4d; font-size: 1.2rem; text-align: left; margin-top: 0.3rem;"></div>
                 </div>
                 <div class="input-field">
                     <input type="tel" id="number" placeholder="Mobile Number" required>
-                    <div class="error"></div>
+                    <div class="error" style="color: #ff4d4d; font-size: 1.2rem; text-align: left; margin-top: 0.3rem;"></div>
                 </div>
             </div>
             <div class="textarea-field">
                 <textarea id="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                <div class="error"></div>
+                <div class="error" style="color: #ff4d4d; font-size: 1.2rem; text-align: left; margin-top: 0.3rem;"></div>
             </div>
             <div class="btn-box btns">
                 <button type="submit" class="btn">Submit Message</button>
-            </div>
+            </div>  
         </form>
     </section>
 
-    <!-- ─── FOOTER ─── -->
     <footer class="footer">
         <div class="footer-text">
             <p>Copyright &copy; 2026 | Miro Zukina | 083 037 36 95</p>
         </div>
         <div class="footer-iconTop">
-            <a href="#home" aria-label="Back to top"><i class='bx bx-up-arrow-alt'></i></a>
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
         </div>
+    </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
