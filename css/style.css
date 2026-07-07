@@ -454,13 +454,13 @@ span {
 
 .app-shot { 
     width: 100%; 
-    height: auto; 
-    max-height: 240px;
+    height: 200px;             /* 1. Makes the container shorter so the card looks smaller */
     object-fit: cover; 
-    object-position: top;
+    object-position: center -30px; /* 2. Shifts the image UP by 30px to hide the battery status */
     display: block; 
     background: #14243a; 
     border-bottom: 1px solid #1e3a52;
+    transform: scale(0.9);     /* 3. Zooms out slightly so you see more of the actual app */
 }
 
 .app-body { 
