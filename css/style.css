@@ -454,13 +454,13 @@ span {
 
 .app-shot { 
     width: 100%; 
-    height: 200px;             /* 1. Makes the container shorter so the card looks smaller */
-    object-fit: cover; 
-    object-position: center -50px; /* 2. Shifts the image UP by 30px to hide the battery status */
+    height: 180px;                 /* Compact height */
+    object-fit: contain;           /* Fits the entire app screen neatly inside the card */
+    background: #091522;           /* Matches your card color perfectly so there are no awkward borders */
     display: block; 
-    background: #14243a; 
     border-bottom: 1px solid #1e3a52;
-    transform: scale(0.8);     /* 3. Zooms out slightly so you see more of the actual app */
+    padding-top: 10px;             /* Naturally pushes the image down to hide the top status bar */
+    margin-top: -15px;             /* Crops the status bar out of view */
 }
 
 .app-body { 
