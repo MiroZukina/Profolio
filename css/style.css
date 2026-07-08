@@ -452,17 +452,25 @@ span {
     filter: brightness(1.15); 
 }
 
+.app-card { 
+    background: #0d1926; 
+    border: 1px solid #1e3a52; 
+    border-radius: 20px;
+    overflow: hidden; /* This acts like a mask to hide the cropped top bar */
+    transition: transform .2s ease, border-color .2s ease; 
+}
+
 .app-shot { 
     width: 100%; 
-    height: 220px;                 /* Clean height for the image window */
-    object-fit: cover;             /* Forces the app screenshot to fill the card width */
-    object-position: center top;   /* Aligns it at the top */
+    height: 230px; 
+    object-fit: cover; 
+    object-position: center top; 
     display: block; 
     border-bottom: 1px solid #1e3a52;
     
-    /* These two lines cut out the phone status bar cleanly */
-    transform: scale(1.08);        /* Slightly zooms past the battery/time status bar */
-    clip-path: inset(6% 0 0 0);    /* Hides the zoomed top area so it doesn't spill out */
+    /* These two lines push the image up and hide the battery */
+    margin-top: -35px; /* Adjust this number to push up higher or lower */
+    transform: scale(1.02); /* Keeps the edges perfectly crisp */
 }
 .app-body { 
     padding: 14px 18px 18px; 
