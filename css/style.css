@@ -455,15 +455,15 @@ span {
 
 .app-shot { 
     width: 100%; 
-    height: 200px;             /* 1. Makes the container shorter so the card looks smaller */
+    height: 200px;             
     object-fit: cover; 
-    object-position: center -55px; /* 2. Shifts the image UP by 30px to hide the battery status */
+    object-position: center -55px; /* Keeps your perfect battery-hide position */
     display: block; 
     background: #14243a; 
     border-bottom: 1px solid #1e3a52;
-    transform: scale(0.9);     /* 3. Zooms out slightly so you see more of the actual app */
+    /* Removed the transform scale entirely so it fills the card edges */
 }
-}
+
 .app-body { 
     padding: 14px 18px 18px; 
 }
